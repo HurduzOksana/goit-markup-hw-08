@@ -142,6 +142,7 @@
     // margin-right: 30px;
     // margin-bottom: 30px;
     // width: 358px;
+    
 }
 @media screen and (min-width: 1200px) {
     // width: 370px;
@@ -166,3 +167,17 @@
 
 }
 
+.portfolio .item {
+@media screen and (min-width: 767px) and (max-width: 1199px)  {
+    margin-bottom: 30px;
+    width: calc((100% - 30px) / 2);
+
+    &:nth-child(2n - 1) {
+        margin-right: 30px;
+    }
+
+    &:nth-last-child(-n + 2) {
+        margin-bottom: 0px;
+    }
+}
+}
