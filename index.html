@@ -193,21 +193,30 @@
                 <ul class="operations__list list">
                     <li class="operations__link">
                         <div class="operations__wrap">
-                        <img class="operations__image" src="./images/img1.jpg" alt="The tablet with code" width="370">
+                    <picture>
+                        <img srcset="./images/desk_oper1@1x.jpg 1x, ./images/desk_oper1@2x.jpg 2x" src="./images/desk_oper1@1x.jpg"
+                        alt="The tablet with code" width="370" />
+                    </picture>
                         <h3 class="operations__title">Десктопні додатки</h3>
                     </div>
                     </li>
                     
                     <li class="operations__link">
                         <div class="operations__wrap">
-                        <img class="operations__image" src="./images/img2.jpg" alt="Cellphones on the device screen" width="370">
+                        <picture>
+                            <img srcset="./images/desk_oper2@1x.jpg 1x, ./images/desk_oper2@2x.jpg 2x" src="./images/desk_oper2@1x.jpg"
+                                alt="Cellphones on the device screen" width="370"/>
+                        </picture>
                         <h3 class="operations__title">Мобільні додатки</h3>
                     </div>
                     </li>
                     
                     <li class="operations__link">
                         <div class="operations__wrap">
-                        <img class="operations__image" src="./images/img3.jpg" alt="Color palette on the device's screen" width="370">
+                        <picture>
+                            <img srcset="./images/desk_oper3@1x.jpg 1x, ./images/desk_oper3@2x.jpg 2x" src="./images/desk_oper3@1x.jpg"
+                                alt="The tablet with code" width="370" alt="Color palette on the device's screen" />
+                        </picture>
                         <h3 class="operations__title">Дизайнерські рішення</h3>
                     </div>
                     </li>
@@ -219,13 +228,25 @@
         <section class="section section-team">
             <div class="container">
                 <h3 class="team__title title">Наша команда</h3>
-                
                 <div class="team-container">
                 <ul class="team__card list">
                     <li class="team__item">
-                        <img class="team__photo" src="./images/per1.jpg" alt="The photo of Ihor Demyanenko" width="270">
-                        
                         <div class="team__wrap">
+                            <picture>
+                                    <source srcset="
+                                                                                ./images/mob_person1@1x.jpg 1x,
+                                                                                ./images/mob_person1@2x.jpg 2x
+                                                                              " media="(max-width: 767px)" />
+                                    <source srcset="
+                                                                                ./images/tab_person1@1x.jpg 1x,
+                                                                                ./images/tab_person1@2x.jpg 2x
+                                                                              " media="(min-width: 768px) and (max-width: 1199px)" />
+                                    <source srcset="
+                                                                                ./images/desk_person1@1x.jpg 1x,
+                                                                                ./images/desk_person1@2x.jpg 2x
+                                                                              " media="(min-width: 1200px)" />
+                                    <img class="team__photo" src="./images/per1.jpg" alt="Ігор Дем'яненко" />
+                                </picture>
                         <h3 class="team__name">Ігор Дем'яненко</h3>
                         <p class="team__position">Product Designer</p>
                     <ul class="team__list list">
@@ -247,9 +268,22 @@
                     </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__photo" src="./images/per2.jpg" alt="The photo of Olga Repina" width="270">
-                        
                         <div class="team__wrap">
+                        <picture>
+                            <source srcset="
+                                                                        ./images/mob_person2@1x.jpg 1x,
+                                                                        ./images/mob_person2@2x.jpg 2x
+                                                                      " media="(max-width: 767px)" />
+                            <source srcset="
+                                                                        ./images/tab_person2@1x.jpg 1x,
+                                                                        ./images/tab_person2@2x.jpg 2x
+                                                                      " media="(min-width: 768px) and (max-width: 1199px)" />
+                            <source srcset="
+                                                                        ./images/desk_person2@1x.jpg 1x,
+                                                                        ./images/desk_person2@2x.jpg 2x
+                                                                      " media="(min-width: 1200px)" />
+                            <img class="team__photo" src="./images/per2.jpg" alt="Ольга Рєпіна" />
+                        </picture>
                         <h3 class="team__name ">Ольга Рєпіна</h3>
                         <p class="team__position">Frontend Developer</p>
                         <ul class="team__list list">
@@ -271,9 +305,22 @@
                     </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__photo" src="./images/per3.jpg" alt="The photo of Mykola Tarasov" width="270">
-                        
                         <div class="team__wrap">
+                            <picture>
+                                <source srcset="
+                                                                            ./images/mob_person3@1x.jpg 1x,
+                                                                            ./images/mob_person3@2x.jpg 2x
+                                                                          " media="(max-width: 767px)" />
+                                <source srcset="
+                                                                            ./images/tab_person3@1x.jpg 1x,
+                                                                            ./images/tab_person3@2x.jpg 2x
+                                                                          " media="(min-width: 768px) and (max-width: 1199px)" />
+                                <source srcset="
+                                                                            ./images/desk_person3@1x.jpg 1x,
+                                                                            ./images/desk_person3@2x.jpg 2x
+                                                                          " media="(min-width: 1200px)" />
+                                <img class="team__photo" src="./images/per3.jpg" alt="Микола Тарасов" />
+                            </picture>
                         <h3 class="team__name ">Микола Тарасов</h3>
                         <p class="team__position">Marketing</p>
                         <ul class="team__list list">
@@ -295,9 +342,22 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__photo" src="./images/per4.jpg" alt="The photo of Mykhailo Yermakov" width="270">
-                        
                         <div class="team__wrap">
+                            <picture>
+                                <source srcset="
+                                                                            ./images/mob_person4@1x.jpg 1x,
+                                                                            ./images/mob_person4@2x.jpg 2x
+                                                                          " media="(max-width: 767px)" />
+                                <source srcset="
+                                                                            ./images/tab_person4@1x.jpg 1x,
+                                                                            ./images/tab_person4@2x.jpg 2x
+                                                                          " media="(min-width: 768px) and (max-width: 1199px)" />
+                                <source srcset="
+                                                                            ./images/desk_person4@1x.jpg 1x,
+                                                                            ./images/desk_person4@2x.jpg 2x
+                                                                          " media="(min-width: 1200px)" />
+                                <img class="team__photo" src="./images/per4.jpg" alt="Михайло Єрмаков" />
+                            </picture>
                         <h3 class="team__name ">Михайло Єрмаков</h3>
                         <p class="team__position">UI Designer</p>
                        

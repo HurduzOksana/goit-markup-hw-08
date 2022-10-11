@@ -72,7 +72,10 @@
 
 .team__card .team__photo {
     display: block;
+    margin-bottom: 30px;
+@media screen and (min-width: 1200px) {
     width: 100%;
+}
 }
 
 .section-team {
@@ -81,8 +84,8 @@
 
 .team__wrap {
     display: block;
+    padding-bottom: 30px;
     margin: 0;
-    padding: 30px 0;
     background-color: var(--background-header);
 }
 

@@ -32,7 +32,6 @@
 .mobile-menu {
     height: 100%;
     display: flex;
-    margin-bottom: 302px;
     flex-direction: column;
     &__wrapper {
         margin-top: auto;
@@ -40,6 +39,7 @@
 }
 
 .mobile-nav {
+    margin-bottom: 302px;
     &__item {
         &:not(:last-child) {
             margin-bottom: 32px;
