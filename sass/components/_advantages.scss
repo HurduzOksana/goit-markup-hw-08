@@ -8,23 +8,18 @@
     box-sizing: border-box;
     padding-top: 25px;
     padding-bottom: 25px;
-
 }
 
 
 @media screen and (min-width: 768px) {
     .advantages__list {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .advantages__list {
-        -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     }
 }

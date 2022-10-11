@@ -31,18 +31,22 @@
     margin-right: auto;
     padding-left: auto;
     padding-right: auto;
-    font-size: 44px;
-    line-height: 1.36;
     text-align: center;
+    font-size: 26px;
+    line-height: 1.61;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+@media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+}
 }
 
 
 .hero__btn--primary {
 
     border-radius: 4px;
-    padding: 10px 32px;
+    padding: 10px 24px;
     display: inline-block;
     min-width: 152px;
     text-align: center;
@@ -55,7 +59,10 @@
     letter-spacing: 0.06em;
 
     &:active {
-            color: var(--accent);
-        }
-}
+        color: var(--accent);
+    }
 
+@media screen and (min-width: 1200px) {
+    padding: 10px 32px;
+}
+}
