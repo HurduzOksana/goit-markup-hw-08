@@ -22,8 +22,8 @@
                 </svg>
             </button>
             <ul class="site-nav list">
-                <li class="site-nav__item"><a href="./index.html" class="link link-current">Студія</a></li>
-                <li class="site-nav__item"><a href="./portfolio.html" class="link link-selection">Портфоліо</a></li>
+                <li class="site-nav__item"><a href="./index.html" class="link link-selection">Студія</a></li>
+                <li class="site-nav__item"><a href="./portfolio.html" class="link link-current">Портфоліо</a></li>
                 <li class="site-nav__item"><a href="" class="link link-selection">Контакти</a></li>
             </ul>
 
@@ -68,10 +68,10 @@
     <div class="mobile-menu">
         <ul class="mobile-menu__nav mobile-nav list">
             <li class="mobile-nav__item">
-                <a class="mobile-nav__link accent" href="#">Студія</a>
+                <a class="mobile-nav__link" href="./index.html">Студія</a>
             </li>
             <li class="mobile-nav__item">
-                <a class="mobile-nav__link" href="#">Портфоліо</a>
+                <a class="mobile-nav__link accent" href="#">Портфоліо</a>
             </li>
             <li class="mobile-nav__item">
                 <a class="mobile-nav__link" href="#">Контакти</a>
@@ -134,9 +134,22 @@
                                 <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
-                                
-                        <img class="portfolio-gap" src="images/portfolio1.jpg" alt="The tablet with code" width="370">
+                        <picture>
+                            <source srcset="
+                            ./images/mob_portfolio1@1x.jpg    1x,
+                            ./images/mob_portfolio1@2x.jpg 2x
+                            " type="image/jpg" media="(max-width: 767px)" />
                         
+                            <source srcset="
+                            ./images/tab_portfolio1@1x.jpg    1x,
+                            ./images/tab_portfolio1@2x.jpg 2x
+                            " type="image/jpg" media="(min-width: 768px)" />
+                            <source srcset="
+                            ./images/desk_portfolio1@1x.jpg 1x,
+                            ./images/desk_portfolio1@2x.jpg 2x
+                            " type="image/jpg" media="(min-width: 1200px)" />
+                            <img class="portfolio-gap" src="images/portfolio1.jpg" alt="The tablet with code">
+                        </picture>
                         </div>
                         <div class="content">
                             <h2 class="examples">Технокряк</h2>
@@ -153,44 +166,78 @@
                                 <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
-                        <img class="portfolio-gap" src="images/portfolio2.jpg" alt="The poster of New Orlean VS Golden Star" width="370">
-
+                            <picture>
+                            <source srcset="
+                            ./images/mob_portfolio2@1x.jpg    1x,
+                            ./images/mob_portfolio2@2x.jpg 2x
+                            " type="image/jpg" media="(max-width: 767px)" />
+                            
+                            <source srcset="
+                            ./images/tab_portfolio2@1x.jpg    1x,
+                            ./images/tab_portfolio2@2x.jpg 2x
+                            " type="image/jpg" media="(min-width: 768px)" />
+                            <source srcset="
+                            ./images/desk_portfolio2@1x.jpg    1x,
+                            ./images/desk_portfolio2@2x.jpg 2x
+                            " type="image/jpg" media="(min-width: 1200px)" />
+                            <img class="portfolio-gap" src="images/portfolio2.jpg" alt="The poster of New Orlean VS Golden Star">
+                        </picture>
                         </div>
                         <div class="content">
                             <h2 class="examples">Постер New Orlean vs Golden Star</h2>
                             <p class="text-card">Дизайн</p>
                         </div>
-
                     </li>
-
-
-
                     <li class="item">
                         <div class="potrfolio-image">
                             <div class="overlay">
                                 <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
-                        <img class="portfolio-gap" src="images/portfolio3.jpg" alt="The seafood restaurant's logotype" width="370">
-
+                            <picture>
+                                <source srcset="
+                                ./images/mob_portfolio3@1x.jpg    1x,
+                                ./images/mob_portfolio3@2x.jpg 2x
+                                " type="image/jpg" media="(max-width: 767px)" />
+                            
+                                <source srcset="
+                                ./images/tab_portfolio3@1x.jpg    1x,
+                                ./images/tab_portfolio3@2x.jpg 2x
+                                " type="image/jpg" media="(min-width: 768px)" />
+                                <source srcset="
+                                ./images/desk_portfolio3@2x.jpg    1x,
+                                ./images/desk_portfolio3@2x.jpg 2x
+                                " type="image/jpg" media="(min-width: 1200px)" />
+                            <img class="portfolio-gap" src="images/portfolio3.jpg" alt="The seafood restaurant's logotype">
+                            </picture>            
                         </div>
                         <div class="content">
                             <h2 class="examples">Ресторан Seafood</h2>
                             <p class="text-card">Додаток</p>
                         </div>
-
                     </li>
-
-
-
                     <li class="item">
                         <div class="potrfolio-image">
                             <div class="overlay">
                                 <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
-                        <img class="portfolio-gap" src="images/portfolio4.jpg" alt="Earbuds" width="370">
-
+                            <picture>
+                                <source srcset="
+                                ./images/mob_portfolio4@1x.jpg    1x,
+                                ./images/mob_portfolio4@2x.jpg 2x
+                                " type="image/jpg" media="(max-width: 767px)" />
+                            
+                                <source srcset="
+                                ./images/tab_portfolio4@1x.jpg    1x,
+                                ./images/tab_portfolio4@2x.jpg 2x
+                                " type="image/jpg" media="(min-width: 768px)" />
+                                <source srcset="
+                                ./images/desk_portfolio4@2x.jpg    1x,
+                                ./images/desk_portfolio4@2x.jpg 2x
+                                " type="image/jpg" media="(min-width: 1200px)" />
+                                <img class="portfolio-gap" src="images/portfolio4.jpg" alt="Earbuds" >
+                            </picture>
                         </div>
                         <div class="content">
                             <h2 class="examples">Проєкт Prime</h2>
@@ -207,94 +254,149 @@
                                 <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
-                        <img class="portfolio-gap" src="images/portfolio5.jpg" alt="Boxes" width="370">
+                            <picture>
+                                <source srcset="
+                                ./images/mob_portfolio5@1x.jpg    1x,
+                                ./images/mob_portfolio5@2x.jpg 2x
+                                " type="image/jpg"
+                                    media="(max-width: 767px)" />
+                            
+                                <source srcset="
+                                ./images/tab_portfolio5@1x.jpg    1x,
+                                ./images/tab_portfolio5@2x.jpg 2x
+                                " type="image/jpg"
+                                media="(min-width: 768px)" />
+                                <source srcset="
+                                ./images/desk_portfolio5@2x.jpg    1x,
+                                ./images/desk_portfolio5@2x.jpg 2x
+                                " type="image/jpg"
+                                media="(min-width: 1200px)" />
+                                <img class="portfolio-gap" src="images/portfolio5.jpg" alt="Boxes">
+                            </picture>
+                        
 
                         </div>
                         <div class="content">
                             <h2 class="examples">Проєкт Boxes</h2>
                             <p class="text-card">Додаток</p>
                         </div>
-
                     </li>
-
-
                     <li class="item">
                         <div class="potrfolio-image">
                             <div class="overlay">
                                 <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
-                        <img class="portfolio-gap" src="images/portfolio6.jpg" alt="The monitor" width="370">
-
+                            <picture>
+                                <source srcset="
+                                    ./images/mob_portfolio6@1x.jpg    1x,
+                                    ./images/mob_portfolio6@2x.jpg 2x
+                                    " type="image/jpg" media="(max-width: 767px)" />
+    
+                                <source srcset="
+                                    ./images/tab_portfolio6@1x.jpg    1x,
+                                    ./images/tab_portfolio6@2x.jpg 2x
+                                    " type="image/jpg" media="(min-width: 768px)" />
+                                <source srcset="
+                                    ./images/desk_portfolio6@2x.jpg    1x,
+                                    ./images/desk_portfolio6@2x.jpg 2x
+                                    " type="image/jpg" media="(min-width: 1200px)" />
+                                <img class="portfolio-gap" src="images/portfolio6.jpg" alt="Boxes">
+                            </picture>
                         </div>
                         <div class="content">
                             <h2 class="examples">Inspiration has no Borders</h2>
                             <p class="text-card">Веб-сайт</p>
                         </div>
-
                     </li>
-
-
-
                     <li class="item">
                         <div class="potrfolio-image">
                             <div class="overlay">
                                 <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
-                        <img class="portfolio-gap" src="images/portfolio7.jpg" alt="Limited Edition magazine" width="370">
-
+                            <picture>
+                                <source srcset="
+                                ./images/mob_portfolio7@1x.jpg    1x,
+                                ./images/mob_portfolio7@2x.jpg 2x
+                                " type="image/jpg" media="(max-width: 767px)" />
+                            
+                                <source srcset="
+                                ./images/tab_portfolio7@1x.jpg    1x,
+                                ./images/tab_portfolio7@2x.jpg 2x
+                                " type="image/jpg" media="(min-width: 768px)" />
+                                <source srcset="
+                                ./images/desk_portfolio7@2x.jpg    1x,
+                                ./images/desk_portfolio7@2x.jpg 2x
+                                " type="image/jpg" media="(min-width: 1200px)" />
+                                <img class="portfolio-gap" src="images/portfolio7.jpg" alt="Limited Edition magazine">
+                            </picture>                
                         </div>
                         <div class="content">
 
                             <h2 class="examples">Видання Limited Edition</h2>
                             <p class="text-card">Дизайн</p>
                         </div>
-
                     </li>
-
-
-
                     <li class="item">
                         <div class="potrfolio-image">
                             <div class="overlay">
                                 <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
                                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
-                        <img class="portfolio-gap" src="images/portfolio8.jpg" alt="Tag with text" width="370">
-
+                            <picture>
+                                <source srcset="
+                                ./images/mob_portfolio8@1x.jpg    1x,
+                                ./images/mob_portfolio8@2x.jpg 2x
+                                " type="image/jpg" media="(max-width: 767px)" />
+                            
+                                <source srcset="
+                                ./images/tab_portfolio8@1x.jpg 1x,
+                                ./images/tab_portfolio8@2x.jpg 2x
+                                " type="image/jpg" media="(min-width: 768px)" />
+                                <source srcset="
+                                ./images/desk_portfolio8@2x.jpg    1x,
+                                ./images/desk_portfolio8@2x.jpg 2x
+                                " type="image/jpg" media="(min-width: 1200px)" />
+                                <img class="portfolio-gap" src="images/portfolio8.jpg" alt="Tag with text">
+                            </picture>
                         </div>
                         <div class="content">
                             <h2 class="examples">Проєкт LAB</h2>
                             <p class="text-card">Маркетинг</p>
                         </div>
-
                     </li>
-
-
-
                     <li class="item">
                         <div class="potrfolio-image">
                             <div class="overlay">
                                 <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
                                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
-                        <img class="portfolio-gap" src="images/portfolio9.jpg" alt="The laptop" width="370">
-
+                                <picture>
+                                    <source srcset="
+                                    ./images/mob_portfolio9@1x.jpg    1x,
+                                    ./images/mob_portfolio9@2x.jpg 2x
+                                    " type="image/jpg" media="(max-width: 767px)" />
+                                
+                                    <source srcset="
+                                    ./images/tab_portfolio9@1x.jpg 1x,
+                                    ./images/tab_portfolio9@2x.jpg 2x
+                                    " type="image/jpg" media="(min-width: 768px)" />
+                                    <source srcset="
+                                    ./images/desk_portfolio9@2x.jpg    1x,
+                                    ./images/desk_portfolio9@2x.jpg 2x
+                                    " type="image/jpg" media="(min-width: 1200px)" />
+                                    <img class="portfolio-gap" src="./images/portfolio9.jpg" alt="The laptop">
+                                </picture>
                         </div>
                         <div class="content">
                             <h2 class="examples">Growing Business</h2>
                             <p class="text-card">Додаток</p>
                         </div>
-
                     </li>
-
-
                 </ul>
                 </div>
             </div>
-            
-
         </section>
     </main>
 <footer class="footer">
@@ -382,7 +484,7 @@
     </div>
 
 </footer>
-
+<script src="./js/menu.js"></script>
 </body>
 
 </html>

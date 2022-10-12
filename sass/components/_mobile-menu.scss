@@ -88,8 +88,11 @@
         &--accent {
             color: #2196F3;
             font-size: 34px;
+            @media screen and (max-width: 379px) {
+            font-size: 24px;
         }
     }
+}
 }
 
 .mobile-social {
@@ -123,5 +126,8 @@
         line-height: 1.2;
         letter-spacing: 0.02em;
         text-decoration: none;
-    }
+}
+   @media screen and (max-width: 480px) {
+       gap: 5px;
+   }
 }
