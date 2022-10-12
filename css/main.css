@@ -383,6 +383,7 @@ button {
 }
 
 .operations,
+.advantages,
 .section-team,
 .section-portfolio,
 .clients {
@@ -391,6 +392,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .operations,
+.advantages,
 .section-team,
 .section-portfolio,
 .clients {
@@ -898,10 +900,6 @@ button {
   text-transform: uppercase;
 }
 
-.advantages {
-  padding-top: 94px;
-}
-
 .advantages__text {
   margin: 0;
   margin-bottom: 0px;
@@ -953,6 +951,12 @@ button {
     flex-wrap: wrap;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team__card {
+    gap: 30px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .team__card {
     flex-wrap: nowrap;
@@ -962,14 +966,11 @@ button {
   .team__card .team__item {
     width: calc((100% - 30px) / 2);
   }
-  .team__card .team__item:nth-child(2n-1) {
-    margin-right: 30px;
-  }
   .team__card .team__item:nth-last-child(-n+2) {
     margin-bottom: 0px;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .team__card .team__item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -1182,7 +1183,7 @@ button {
   background-color: var(--accent);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .footer__box {
     margin-bottom: 60px;
   }
