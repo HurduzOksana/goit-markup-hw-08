@@ -110,12 +110,14 @@
 
 .footer__social-icons {
     display: flex;
-    justify-content: center;
 
     @media screen and (min-width: 1200px) {
         margin-left: 0;
         margin-right: 70px;
     }
+    @media screen and (max-width: 1199px) {
+        justify-content: center;
+}
 }
 
 .footer__icon {
